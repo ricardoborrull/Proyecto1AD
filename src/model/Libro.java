@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Libro implements Serializable{
 
-	private String id;
 	public String getId() {
 		return id;
 	}
@@ -53,6 +52,7 @@ public class Libro implements Serializable{
 		this.paginas = paginas;
 	}
 
+	private String id;
 	private String titulo;
 	private String autor;
 	private String editor;

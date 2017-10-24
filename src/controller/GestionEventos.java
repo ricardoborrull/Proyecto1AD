@@ -61,7 +61,7 @@ public class GestionEventos {
 				call_recuperaLibros();
 			}
 		};
-		view.getCopiar().addActionListener(actionListener_recuperarL);
+		view.getRecuperarL().addActionListener(actionListener_recuperarL);
 		
 		actionListener_buscar = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -69,7 +69,7 @@ public class GestionEventos {
 				call_recuperaTodos();
 			}
 		};
-		view.getCopiar().addActionListener(actionListener_recuperarT);
+		view.getRecuperarT().addActionListener(actionListener_recuperarT);
 	}
 
 	private void call_compararContenido() {
@@ -180,6 +180,7 @@ public class GestionEventos {
 		// Obtenemos el titulo  del libro que queremos buscar:
 		String titulo;
 		titulo = view.getTitulo().getText();
+		view.getTextArea_1().setText(titulo);
 		if (titulo.length() != 0) {		
 			
 			try {
